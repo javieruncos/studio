@@ -146,21 +146,21 @@ export const approach = {
       number: "01",
       title: "Light",
       description:
-        "We orient before we compose. Openings are sized and placed to filter day — morning into rooms, midday into shade, evening along walls. Shadow is kept as material; a room is judged by how it holds 5pm.",
+        "We orient before we compose. Openings are sized and placed to filter day — morning into rooms, midday into shade, evening along walls. Shadow is kept as material; a room is judged by how it holds 5pm. Evening is the test: if a room keeps the last hour of sun, the orientation is right.",
       caption: "Light study — opening, depth, hour.",
     },
     {
       number: "02",
       title: "Material",
       description:
-        "Concrete, stone, oak, glass, blackened steel — few surfaces, left legible. Joints are drawn, edges stay sharp, grain stays visible. We prefer what patinas over what shines; texture should record use, not resist it.",
+        "Concrete, stone, oak, glass, blackened steel — few surfaces, left legible. Joints are drawn, edges stay sharp, grain stays visible. We prefer what patinas over what shines; texture should record use, not resist it. Five surfaces are enough for a whole house; repetition keeps every joint honest.",
       caption: "Detail — oak against cast concrete.",
     },
     {
       number: "03",
       title: "Proportion",
       description:
-        "Measure orders mass and void. Widths, heights, and thresholds are set by sequence: entry, compression, release. A corridor is not leftover; it paces the house and frames what comes next.",
+        "Measure orders mass and void. Widths, heights, and thresholds are set by sequence: entry, compression, release. A corridor is not leftover; it paces the house and frames what comes next. When the measure is right, the house needs no explanation.",
       caption: "Sequence — threshold, compression, room.",
     },
   ] satisfies Principle[],

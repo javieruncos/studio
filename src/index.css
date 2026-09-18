@@ -60,9 +60,9 @@ body {
 h1,
 h2,
 h3 {
-  font-family: var(--font-serif);
-  font-weight: 400;
-  letter-spacing: -0.02em;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  letter-spacing: -0.01em;
   text-wrap: balance;
   margin: 0;
 }
@@ -88,26 +88,61 @@ p {
   text-wrap: pretty;
 }
 
-/* Hero megatype — Manrope display voice (all-sans, uppercase). */
+/* Hero megatype — Manrope display voice (all-sans, uppercase).
+   Gesto único del Hero: indent asimétrico de la línea 2 (ver Hero.tsx).
+   Sin scrim ni overlay: legibilidad sobre la zona oscura de la foto. */
 .hero-display {
   font-family: var(--font-sans);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: -0.01em;
   line-height: 0.92;
-  font-size: clamp(48px, 14vw, 72px);
+  font-size: clamp(52px, 15vw, 76px);
 }
 
 @media (min-width: 768px) {
   .hero-display {
-    font-size: clamp(52px, 8vw, 82px);
+    font-size: clamp(56px, 9vw, 96px);
   }
 }
 
 @media (min-width: 1024px) {
   .hero-display {
-    font-size: clamp(72px, 10vw, 148px);
+    font-size: clamp(72px, 10.5vw, 156px);
   }
+}
+
+/* Display de sección — Manrope protagonista para títulos de sección.
+   Escala fuerte pero menor que el Hero para mantener jerarquía. */
+.display-section {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  line-height: 0.95;
+  font-size: clamp(40px, 9vw, 56px);
+  text-wrap: balance;
+}
+
+@media (min-width: 768px) {
+  .display-section {
+    font-size: clamp(44px, 6.5vw, 84px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .display-section {
+    font-size: clamp(56px, 7vw, 112px);
+  }
+}
+
+/* Serif puntual — recurso secundario de contraste, nunca protagonista.
+   Uso máximo: un momento por página y solo si la composición lo justifica. */
+.serif-accent {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  text-transform: none;
 }
 
 img {
