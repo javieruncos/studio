@@ -108,7 +108,21 @@ p {
 
 @media (min-width: 1024px) {
   .hero-display {
-    font-size: clamp(72px, 10.5vw, 156px);
+    font-size: clamp(64px, 9vw, 120px);
+  }
+}
+
+/* Viewports bajos: el titular también escala con la altura para que
+   todo el contenido quede visible sin scroll (landscape, 720p). */
+@media (min-width: 1024px) and (max-height: 800px) {
+  .hero-display {
+    font-size: clamp(48px, 8vh + 3vw, 88px);
+  }
+}
+
+@media (max-width: 767px) and (max-height: 620px) {
+  .hero-display {
+    font-size: clamp(40px, 11vw, 56px);
   }
 }
 

@@ -42,8 +42,8 @@ function StudyFigure({
 }) {
   return (
     <figure>
-      {/* Altura fija por breakpoint: las tres figuras miden lo mismo */}
-      <div className="h-64 w-full overflow-hidden bg-ink/5 md:h-96 lg:h-[480px]">
+      {/* Altura fija por breakpoint: presencia con menos masa */}
+      <div className="h-56 w-full overflow-hidden bg-ink/5 md:h-80 lg:h-[420px]">
         <img
           src={hero.figure.src}
           alt={crop.alt}
@@ -70,7 +70,7 @@ export default function Approach() {
       aria-labelledby="approach-title"
       className="bg-surface text-ink"
     >
-      <Container className="py-24 md:py-32 lg:py-40">
+      <Container className="py-20 md:py-28 lg:py-36">
         <Reveal>
           <SectionHeading
             eyebrow={approach.eyebrow}
@@ -80,7 +80,7 @@ export default function Approach() {
           />
         </Reveal>
 
-        <div className="mt-16 md:mt-24">
+        <div className="mt-16 md:mt-20">
           {/* 01 — LIGHT: imagen 1–7, texto 8–12 */}
           <Reveal y={24}>
             <article className="grid grid-cols-12 gap-6 border-t border-line pt-8 md:pt-10">
@@ -115,6 +115,7 @@ export default function Approach() {
                   17:40 — West / Opening E-02
                 </p>
               </div>
+              {/* Pausa de introducción — la más contenida */}
               <div aria-hidden="true" className="col-span-12 pb-12 md:pb-16" />
             </article>
           </Reveal>
@@ -146,7 +147,8 @@ export default function Approach() {
                   placeholder="PLACEHOLDER — final Material study photography pending"
                 />
               </div>
-              <div aria-hidden="true" className="col-span-12 pb-12 md:pb-16" />
+              {/* Pausa de continuidad — intermedia */}
+              <div aria-hidden="true" className="col-span-12 pb-16 md:pb-20" />
             </article>
           </Reveal>
 
@@ -186,7 +188,8 @@ export default function Approach() {
                   </span>
                 </div>
               </div>
-              <div aria-hidden="true" className="col-span-12 pb-12 md:pb-16" />
+              {/* Pausa de cierre — la más amplia, clausura la secuencia */}
+              <div aria-hidden="true" className="col-span-12 pb-20 md:pb-24" />
             </article>
           </Reveal>
         </div>

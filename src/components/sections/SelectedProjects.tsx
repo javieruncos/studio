@@ -30,9 +30,13 @@ export default function SelectedProjects() {
           />
         </Reveal>
 
-        <div className="mt-14 grid grid-cols-12 gap-x-6 gap-y-12 md:mt-20 lg:gap-x-12">
+        {/* N°01 + índice: una sola unidad, una sola entrada */}
+        <Reveal
+          className="mt-14 grid grid-cols-12 gap-x-6 gap-y-12 md:mt-20 lg:gap-x-12"
+          y={20}
+        >
           {/* N°01 — columna izquierda */}
-          <Reveal className="col-span-12 lg:col-span-6" y={20}>
+          <div className="col-span-12 lg:col-span-6">
             <figure>
               <div className="w-full overflow-hidden bg-surface">
                 <img
@@ -42,7 +46,7 @@ export default function SelectedProjects() {
                   height={768}
                   loading="lazy"
                   decoding="async"
-                  className="aspect-[4/3] w-full object-cover"
+                  className="aspect-[4/3] w-full object-cover lg:aspect-square"
                 />
               </div>
               <figcaption className="mt-3 font-mono text-[11px] leading-relaxed tracking-[0.04em] text-muted">
@@ -54,10 +58,10 @@ export default function SelectedProjects() {
                 {first.category} / {first.location} / {first.year}
               </p>
             </figure>
-          </Reveal>
+          </div>
 
           {/* Índice 02–04 — columna derecha */}
-          <Reveal className="col-span-12 lg:col-span-6" y={20}>
+          <div className="col-span-12 lg:col-span-6">
             <p className="flex items-center gap-2 font-mono text-[11px] tracking-[0.08em] text-muted uppercase">
               <span
                 aria-hidden="true"
@@ -75,7 +79,7 @@ export default function SelectedProjects() {
               {rest.map((project, i) => (
                 <article
                   key={project.number}
-                  className={`grid grid-cols-12 border-t border-line py-6 md:py-8 ${
+                  className={`grid grid-cols-12 border-t border-line py-6 ${
                     i === rest.length - 1 ? "border-b" : ""
                   }`}
                 >
@@ -94,8 +98,8 @@ export default function SelectedProjects() {
                 [PLACEHOLDER — photography for N°02–04 pending]
               </p>
             </div>
-          </Reveal>
-        </div>
+          </div>
+        </Reveal>
       </Container>
     </section>
   );

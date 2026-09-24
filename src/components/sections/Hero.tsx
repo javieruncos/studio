@@ -62,7 +62,7 @@ export default function Hero() {
       )}
 
       {/* Contenido — titular anclado abajo-izquierda, grilla 12 */}
-      <Container className="relative flex min-h-[100svh] flex-col pb-8 pt-24 md:pb-10 lg:pb-12 lg:pt-28">
+      <Container className="relative flex h-[100vh] h-[100svh] flex-col overflow-hidden pb-6 pt-20 md:pb-8 lg:pb-10 lg:pt-24">
         {/* Banda técnica superior — bajo el header fijo */}
         <div className="flex items-center justify-between gap-4">
           <p className="min-w-0 text-[11px] font-semibold tracking-[0.16em] text-white/70 uppercase md:text-xs">
@@ -78,7 +78,7 @@ export default function Hero() {
         </div>
 
         {/* Titular — 11/12 en desktop, línea 2 con indent asimétrico */}
-        <div className="mt-auto grid grid-cols-12 pt-16 md:pt-20">
+        <div className="mt-auto grid grid-cols-12 pt-8 md:pt-10">
           {reduceMotion ? (
             <h1
               id="hero-title"
@@ -108,7 +108,7 @@ export default function Hero() {
         </div>
 
         {/* Fila inferior — apoyo izquierda, caption técnica derecha */}
-        <div className="mt-8 grid grid-cols-12 items-end gap-6 md:mt-10">
+        <div className="mt-6 grid grid-cols-12 items-end gap-4 md:mt-8">
           <Reveal
             y={16}
             delay={0.2}
