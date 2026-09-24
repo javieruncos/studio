@@ -42,32 +42,43 @@ The design should feel quiet but distinctive.
 
 ### Visual Direction
 
-**CONTEMPORARY EDITORIAL ARCHITECTURE**
+**ULTRA-MODERN CONTEMPORARY ARCHITECTURE / DIGITAL ART DIRECTION**
+
+The site must feel like a piece of digital architecture, not an informative page about architecture.
 
 The visual language combines:
 
-* contemporary architecture
-* editorial art direction
-* Swiss-inspired grid systems
-* architectural photography
-* warm minimalism
-* material-focused composition
-* precise typography
-* restrained interactions
+* high-caliber contemporary architecture
+* artistic, cinematic architectural photography
+* expressive, asymmetric, carefully art-directed composition
+* strong typographic scale (Manrope as protagonist)
+* strong contrast between surfaces, images, and typography
+* dynamic visual rhythm
+* intentional overlap, crops, diagonals, and grid-breaking elements
+* protagonist images, including full-bleed compositions
+* transitions between light and dark surfaces when they add structure
+* terracotta details as punctual accents, never dominant
 
-The design should resemble a contemporary architecture monograph or an independent design studio publication translated into a digital experience.
+Sophistication must emerge from composition, photography, typography, scale, and rhythm.
+
+### Composition Rules
+
+* The 12-column grid is structure, not a cage: allow visual tension and asymmetry.
+* Images may break columns, occupy large surfaces, or work as full backgrounds.
+* Elements may cross grid boundaries when the composition justifies it.
+* Maximum one full-bleed and one compositional gesture (diagonal / crop / bleed / overlap) per section.
+* Every section owns its composition while staying coherent with the overall system.
+* Prioritize hierarchy, scale, and contrast over component accumulation.
 
 ### Desired Emotional Qualities
 
-* calm
+* contemporary
 * precise
+* spatial
+* confident
 * tactile
+* cinematic
 * intentional
-* spacious
-* intelligent
-* warm
-* timeless
-* quietly confident
 
 ### Avoid Generic Design Patterns
 
@@ -306,7 +317,22 @@ Do not introduce:
 
 ### Primary Display Font
 
-Use a refined contemporary serif for major editorial headings.
+Manrope is the protagonist typeface.
+
+Use semibold / bold weights with restraint, prioritizing scale, proportion, and composition over weight contrast.
+
+Manrope handles:
+
+* display headlines (uppercase, large scale)
+* navigation
+* body text
+* labels
+* buttons
+* functional interface elements
+
+### Secondary Serif (punctual only)
+
+Instrument Serif may be used solely as a secondary, punctual resource when it provides real contrast.
 
 Preferred:
 
@@ -314,24 +340,13 @@ Preferred:
 Instrument Serif
 ```
 
+Rules:
+
+* never use serif as the Hero protagonist
+* never build an excessively editorial serif / italic / caption / metadata aesthetic
+* one serif moment per page at most, only when the composition justifies it
+
 If the project already uses another approved serif, preserve the existing decision rather than replacing it without authorization.
-
-### Supporting Sans
-
-Use:
-
-```text
-Manrope
-```
-
-Manrope should handle:
-
-* navigation
-* body text
-* labels
-* buttons
-* metadata when appropriate
-* functional interface elements
 
 ### Optional Mono
 
@@ -349,16 +364,16 @@ Do not use mono as the main body font.
 
 #### Display H1
 
-* large editorial serif
-* strong but not excessively heavy
-* tight visual control
+* Manrope semibold / bold, uppercase, large scale
+* tight visual control (line-height ~0.92, tracking ~-0.01em)
 * responsive scaling
 * short phrase or sentence
 * no unnecessary line breaks forced through `<br>` unless composition requires it
 
 #### Section Headings
 
-* serif or approved display treatment
+* Manrope display treatment at strong scale, uppercase where composition demands it
+* serif only as a punctual secondary accent, never as the default
 * clear hierarchy
 * restrained line length
 * avoid oversized headings in every section
@@ -383,4 +398,7 @@ Do not use mono as the main body font.
 
 Do not use:
 
-* more than two
+* more than two typefaces per view (Manrope + one secondary at most)
+* serif as the Hero protagonist
+* all-caps paragraphs
+* letter-by-letter animations or typewriter effects
